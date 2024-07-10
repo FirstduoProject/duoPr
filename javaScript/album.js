@@ -1,13 +1,23 @@
 function MusicList(title,name,time,pic){
-    var music ={}
+    var List ={}
     music.album = []
+    music.albums = []
     music.title = title
     music.name = name
     music.time = time
     music.pic = pic
 
-    return music
+    return List
 }   
+
+
+function MusicFunctions() {
+    var Functions = {}
+
+    return Functions
+
+}
+
 
 
 
@@ -22,4 +32,7 @@ this.album.push(NansiAjrem2)
 this.album.push(NansiAjrem3)
 this.album.push(NansiAjrem4)
 this.album.push(NansiAjrem5)
+
+
+
 
