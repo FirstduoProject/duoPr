@@ -1,10 +1,101 @@
 
 
+var albums = [
+    {
+      name: "JACKBOYS",
+      artist: "stolen",
+      image: "../imgs/jackboysCover.jpg",
+      tracks: [
+        {
+          title: "arson",
+          artist: "Pop Smoke",
+          image: "../imgs/jackboysCover.jpg",
+          path: "../music/JACKBOYS, Pop Smoke, Travis Scott - GATTI (Audio).mp3",
+        },
+      ],
+    },
+    {
+      name: "JACKBOYS",
+      artist: "Pop Smoke",
+      image: "../imgs/jackboysCover.jpg",
+      tracks: [
+        {
+          title: "jack",
+          artist: "Pop Smoke",
+          image: "../imgs/jackboysCover.jpg",
+          path: "../music/JACKBOYS, Pop Smoke, Travis Scott - GATTI (Audio).mp3",
+        },
+      ],
+    },
+    {
+      name: "JACKBOYS",
+      artist: "Pop Smoke",
+      image: "../imgs/jackboysCover.jpg",
+      tracks: [
+        {
+          title: "Gatti",
+          artist: "Pop Smoke",
+          image: "../imgs/jackboysCover.jpg",
+          path: "../music/JACKBOYS, Pop Smoke, Travis Scott - GATTI (Audio).mp3",
+        },
+      ],
+    },
+    {
+      name: "JACKBOYS",
+      artist: "Pop Smoke",
+      image: "../imgs/jackboysCover.jpg",
+      tracks: [
+        {
+          title: "Gatti",
+          artist: "Pop Smoke",
+          image: "../imgs/jackboysCover.jpg",
+          path: "../music/JACKBOYS, Pop Smoke, Travis Scott - GATTI (Audio).mp3",
+        },
+      ],
+    },
+    {
+      name: "JACKBOYS",
+      artist: "Pop Smoke",
+      image: "../imgs/jackboysCover.jpg",
+      tracks: [
+        {
+          title: "Gatti",
+          artist: "Pop Smoke",
+          image: "../imgs/jackboysCover.jpg",
+          path: "../music/JACKBOYS, Pop Smoke, Travis Scott - GATTI (Audio).mp3",
+        },
+      ],
+    },
+    {
+      name: "JACKBOYS",
+      artist: "Pop Smoke",
+      image: "../imgs/jackboysCover.jpg",
+      tracks: [
+        {
+          title: "Gatti",
+          artist: "Pop Smoke",
+          image: "../imgs/jackboysCover.jpg",
+          path: "../music/JACKBOYS, Pop Smoke, Travis Scott - GATTI (Audio).mp3",
+        },
+      ],
+    },
+  ];
 
 
 
+  var div = document.getElementById("container")
 
 
+  albums.map(function(el){
+    div.innerHTML +=(`
+                     <div class="cards">
+                     <h3  >${el.tracks[0].title}<h3>
+                     <h3  >${el.name}<h3> 
+                     <img src=${el.image}>
+                     <audio controls src="${el.tracks[0].path}"></audio>
+                    </div>`
+
+)});
 
 
 
