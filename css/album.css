@@ -1,0 +1,19 @@
+img {
+    width: 75px;
+
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 auto;
+   
+    gap: 50px;
+}
+.cards {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+   
+}
