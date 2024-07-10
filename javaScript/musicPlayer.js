@@ -82,10 +82,9 @@ var albums = [
 var mydiv = document.querySelector(".album");
 
 albums.map(function (el) {
-  mydiv.innerHTML += (`<div class='card'>
+  mydiv.innerHTML += `<div class='card'>
     <h1>${el.name}</h1>
     <h2>${el.artist}</h2>
     <img src=${el.image} alt="">
-    </div>`);
+    </div>`;
 });
-
