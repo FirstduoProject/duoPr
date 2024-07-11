@@ -23,9 +23,9 @@ for (let i = 0; i < albums.length; i++) {
   }
 } 
 
-document.querySelector("#next").onclick = function NextSongs(track){
+document.querySelector("#next").onclick = function NextSongs(){
  
-  for (let i = 0; i < track.length; i++) {
+  for (let i = 0; i < albums[0].tracks.length; i++) {
     console.log(i)
     var currentSong = track[0]
     var previousSong = null;
@@ -36,7 +36,8 @@ document.querySelector("#next").onclick = function NextSongs(track){
     }
   }
   return nextSong
-};
+}
+
 
 function each(array, func) {
   for (var i = 0; i < array.length; i++) {
@@ -55,12 +56,14 @@ function filter(array,predicate) {
    
   return array2
 }
+   
 
 function searchFor() {
   var newWord = document.getElementById("search").value.trim().toLowerCase(); 
 
-  var filteredTracks = filter(track, function(el) {
-    return newWord === el.title.toLowerCase();
+  var filteredTracks = 
+    filter(track, function(el) {
+    return newWord === el.title.toLowerCase() || newWord === el.artist.toLowerCase()
   });
 
   var container = document.getElementById("container");
@@ -80,3 +83,8 @@ function searchFor() {
       </div>`;
   });
  }
+
+
+
+
+ document.getElementById("btn-search").onclick = function(){searchFor()};
