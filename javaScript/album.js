@@ -23,9 +23,10 @@ for (let i = 0; i < albums.length; i++) {
   }
 } 
 
+
 document.querySelector("#next").onclick = function NextSongs(track){
  
-  for (let i = 0; i < this.track.length; i++) {
+  for (let i = 0; i < track.length; i++) {
     console.log(i)
     var currentSong = track[0]
     var previousSong = null;
@@ -37,9 +38,6 @@ document.querySelector("#next").onclick = function NextSongs(track){
   }
   return nextSong
 };
-
-
-
 
 
 
@@ -61,12 +59,28 @@ function filter(array,predicate) {
   return array2
 }
 
-var inp = getElementById("search")
-var newWord= inp
+function searchFor() {
+  var newWord = document.getElementById("search").value.trim().toLowerCase(); 
 
-function searchFor(){
- return filter(track,function(el){
-  return newWord===el.title
- })
-}
+  var filteredTracks = filter(track, function(el) {
+    return newWord === el.title.toLowerCase();
+  });
 
+
+  var container = document.getElementById("container");
+  container.innerHTML = "";
+
+  filteredTracks.forEach(function(track) {
+    container.innerHTML += `
+      <div class="cards">
+        <h3 class="names">${track.title}</h3>
+        <h3 class="names">${track.artist}</h3>
+        <audio controls src="${track.path}" class="musicPlayer"></audio>
+        <div class="btns">
+          <button class="next"><i class="fa-solid fa-backward-step"></i></button>
+          <button class="prev"><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+        <img src="${track.image}">
+      </div>`;
+  });
+ }
