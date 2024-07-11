@@ -6,6 +6,6 @@ albums.map(function (el) {
   mydiv.innerHTML += `<div class='card'>
     <h1>${el.name}</h1>
     <h2>${el.artist}</h2>
-    <a href=/html/test.html?album=${el.name}><img src=${el.image} alt=""></a>
+    <a href=/html/album.html?album=${el.name}><img src=${el.image} alt=""></a>
     </div>`;
 });
