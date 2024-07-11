@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@ body {
 
 #container {
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
 
 }
@@ -71,4 +71,11 @@ audio::-webkit-media-controls-time-remaining-display {
   padding: 0;
   margin: 0;
   gap: 20px;
+}
+
+.names {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  color: white;
+  text-shadow: 3cm 3cm 3cm 3cm black;
 }
