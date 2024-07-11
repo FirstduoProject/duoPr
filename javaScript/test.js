@@ -9,17 +9,14 @@ var durationDisplay = document.getElementById('duration');
 playPauseButton.addEventListener('click', function() {
     if (audio.paused) {
         audio.play();
-        playPauseButton.textContent = 'pause';
+        playPauseButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
     } else {
         audio.pause();
-        playPauseButton.textContent = 'play';
+        playPauseButton.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
 });
 
-// muteButton.addEventListener('click', function() {
-//     audio.muted = !audio.muted;
-//     muteButton.textContent = audio.muted ? 'Unmute' : 'Mute';
-// });
+
 
 seekBar.addEventListener('input', function() {
     audio.currentTime = seekBar.value;

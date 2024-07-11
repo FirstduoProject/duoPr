@@ -1,0 +1,37 @@
+.audio-player{
+    background-color: aqua;
+    width: 200px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#play-pause {
+background-color: transparent;
+border-radius: 50%;
+border: none;
+width: 50px;
+height: 50px;
+font-size: 20px;
+background: rgb(238,174,202);
+background: -moz-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+cursor: pointer;
+color: white;
+}
+
+#current-time {
+
+}
+
+
+#volume-bar {
+    
+}
+
+#audio {
+
+}
