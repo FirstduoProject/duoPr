@@ -23,10 +23,9 @@ for (let i = 0; i < albums.length; i++) {
   }
 } 
 
-
 document.querySelector("#next").onclick = function NextSongs(track){
  
-  for (let i = 0; i < track.length; i++) {
+  for (let i = 0; i < this.track.length; i++) {
     console.log(i)
     var currentSong = track[0]
     var previousSong = null;
@@ -38,6 +37,7 @@ document.querySelector("#next").onclick = function NextSongs(track){
   }
   return nextSong
 };
+
 
 
 
@@ -69,7 +69,4 @@ function searchFor(){
   return newWord===el.title
  })
 }
-
-
-
 

@@ -1,9 +1,8 @@
 * {
-  margin: 10;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
 
 img {
   width: 75px;
@@ -63,7 +62,6 @@ audio::-webkit-media-controls-time-remaining-display {
     font-size: xx-large;
     border:none;
     background: transparent;
-  ;
 }
 
 .btns {
@@ -78,4 +76,5 @@ audio::-webkit-media-controls-time-remaining-display {
   font-size: larger;
   color: white;
   text-shadow: 3cm 3cm 3cm 3cm black;
+
 }
