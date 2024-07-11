@@ -1,3 +1,6 @@
+///    Trying to add all lists into factory functions    /// 
+
+
 
 // function MusicList(name,artist,image) {
 //     var albumsV ={}
