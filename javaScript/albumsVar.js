@@ -232,33 +232,3 @@ export var albums = [
     ],
   },
 ];
-
-
-
-function MusicList(name,artist,image,tracks) {
-  var albumsV ={}
-  var albums = []
-  
-  albumsV.name = name
-  albumsV.artist = artist
-  albumsV.image = image
-  albumsV.trackList = trackList
-
-  return albumsV
-}
-
-
-function trackList(title,artist,image,path) {
-  var albumV ={}
-  var album = []
-  
-  albumV.title = title
-  albumV.artist = artist
-  albumV.image = image
-  albumV.path = path
-
-  return albumV
-}
-
-
-

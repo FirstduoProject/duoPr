@@ -23,7 +23,6 @@ for (let i = 0; i < albums.length; i++) {
   }
 } 
 
-
 document.querySelector("#next").onclick = function NextSongs(track){
  
   for (let i = 0; i < track.length; i++) {
@@ -38,8 +37,6 @@ document.querySelector("#next").onclick = function NextSongs(track){
   }
   return nextSong
 };
-
-
 
 function each(array, func) {
   for (var i = 0; i < array.length; i++) {
@@ -66,11 +63,10 @@ function searchFor() {
     return newWord === el.title.toLowerCase();
   });
 
-
   var container = document.getElementById("container");
   container.innerHTML = "";
 
-  filteredTracks.forEach(function(track) {
+  each(filteredTracks,function(track) {
     container.innerHTML += `
       <div class="cards">
         <h3 class="names">${track.title}</h3>
