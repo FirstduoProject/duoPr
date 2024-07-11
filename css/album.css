@@ -63,4 +63,8 @@ audio::-webkit-media-controls-time-remaining-display {
     transition-duration: 0.4s;
   }
   
+  .nextPrev:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+  }
   

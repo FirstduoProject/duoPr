@@ -16,10 +16,30 @@ for (let i = 0; i < albums.length; i++) {
             <h3>${track.artist}</h3>
             <audio controls src="${track.path}" class="musicPlayer"></audio>
             <img src="${track.image}">
-            <button>Next</button>
-            <button>Previous</button>
+            <button onclick="nextSong">►</button>
+            <button>◄</button>
           </div>`;
     }
     break;
   }
 }
+  function nextSong(){
+    currentSong= none;
+    
+  }
+
+
+
+// div.innerHTML += `<div>
+//                     <input id="search" type="text">
+//                     <button onclick="SearchFor()">Search</button>
+//                     </div>`;
+
+// var seach = document.getElementById("search")
+
+
+
+// function SearchFor() {
+
+// }
+

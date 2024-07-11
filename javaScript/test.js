@@ -16,10 +16,12 @@ for (let i = 0; i < albums.length; i++) {
             <h3>${track.artist}</h3>
             <audio controls src="${track.path}" class="musicPlayer"></audio>
             <img src="${track.image}">
-            <button>Next</button>
-            <button>Previous</button>
+            <button>◄</button>
+            <button>►</button>
           </div>`;
     }
     break;
   }
 }
+
+
