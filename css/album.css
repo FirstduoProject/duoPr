@@ -1,19 +1,66 @@
-img {
-    width: 75px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+img {
+  width: 75px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
 }
 
 #container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin: 0 auto;
-   
-    gap: 50px;
+  display: grid;
+  grid-template-columns: 550px;
+  gap: 20px;
 }
+
 .cards {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 20px;
-   
+  background-color: transparent;
+  display: flex;
+  padding: 10px 15px;
+  gap: 20px;
+  align-items: center;
 }
+
+
+audio {
+    width: 300px; /* Set the width of the audio player */
+    height: 50px; /* Set the height of the audio player */
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    box-shadow: none; /* No shadow */
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: transparent; /* Transparent background of the control panel */
+    color: #fff; /* Text color */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-timeline {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background of the buttons */
+    border-radius: 50%; /* Rounded buttons */
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #fff; /* Text color */
+}
+
+
+
+/* Buttons Next-Previous */
+
+.nextPrev {
+    transition-duration: 0.4s;
+  }
+  
+  

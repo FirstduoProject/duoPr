@@ -1,6 +1,7 @@
 
 img {
     width: 200px;
+
 }
 
 
@@ -14,7 +15,7 @@ img {
 
 
 .card {
-    /* background-color: aqua; */
+     background-color: aqua; 
     justify-content: center;
     align-items: center;
 }
