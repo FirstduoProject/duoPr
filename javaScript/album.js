@@ -15,29 +15,32 @@ for (let i = 0; i < albums.length; i++) {
             <h3>${track.title}</h3>
             <h3>${track.artist}</h3>
             <audio controls src="${track.path}" class="musicPlayer"></audio>
+            <div class="btns"><button id = "next" onclick="NextSongs()"><i class="fa-solid fa-backward-step"></i></button>
+            <button id = "prev"><i class="fa-solid fa-forward-step"></i></button></div>
             <img src="${track.image}">
-
-            <button id = "next" onclick="NextSongs()"><i class="fa-solid fa-forward-step"></i></button>
-            <button><i class="fa-solid fa-backward-step"></i></button>
-          </div>`;
+            </div>`
     }
     break;
   }
-
 } 
 
-document.querySelector("#next").onclick = function(){
-  var currentSong = track[0]
-  var previousSong = none;
-  var nextSong = track[1]
-  for (let i = 0; i < track.length; i++) {
-    if(currentSong===track[i]) {
-      previousSong= currentSong;
-      currentSong = nextSong;
-    }
+// document.querySelector("#next").onclick = function NextSongs(){
+ 
+//   for (let i = 0; i < track.length; i++) {
+//     var currentSong = track[0]
+//     var previousSong = null;
+//     var nextSong   = track[1]
+//     if(currentSong=== track[i]) {
+//       previousSong = currentSong;
+//       currentSong  = nextSong;
+//     }
     
-  }
-};
+//   }
+//   return nextSong
+// };
+
+
+
 
 
 
