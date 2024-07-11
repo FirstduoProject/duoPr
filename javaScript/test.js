@@ -1,10 +1,10 @@
 var audio = document.getElementById('audio');
 var playPauseButton = document.getElementById('play-pause');
-var muteButton = document.getElementById('mute');
-var seekBar = document.getElementById('seek-bar');
-var volumeBar = document.getElementById('volume-bar');
-var currentTimeDisplay = document.getElementById('current-time');
-var durationDisplay = document.getElementById('duration');
+ var muteButton = document.getElementById('mute');
+ var seekBar = document.getElementById('seek-bar');
+ var volumeBar = document.getElementById('volume-bar');
+ var currentTimeDisplay = document.getElementById('current-time');
+ var durationDisplay = document.getElementById('duration');
 
 playPauseButton.addEventListener('click', function() {
     if (audio.paused) {
