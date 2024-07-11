@@ -89,8 +89,8 @@ var albums = [
   albums.map(function(el){
     div.innerHTML +=(`
                      <div class="cards">
-                     <h3  >${el.tracks[0].title}<h3>
-                     <h3  >${el.name}<h3> 
+                     <h3  >${el.tracks[0].title}</h3>
+                     <h3  >${el.name}</h3> 
                      <img src=${el.image}>
                      <audio controls src="${el.tracks[0].path}"></audio>
                     </div>`
