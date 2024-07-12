@@ -4,29 +4,22 @@
   box-sizing: border-box;
 }
 
-
-:root {
-  --primary-color: #D96AA7;
-  --secondary-color: #422C73;
-  --complimentary-color: #88BFB5;
-  --contrast-color: #F2E527;
-  --light-color: #D2A9D9;
-  }
-
-
-
 img {
-  width: 75px;
+  width: px;
   border-radius: 50%;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  background-color: gray;
+  /* background-color: gray; */
+  position: relative;
 }
 
 #container {
+  position: absolute;
+  top: 30%;
+  left: 25%;
   gap: 20px;
   width: 50%;
   margin: 0 auto;
@@ -48,6 +41,27 @@ body {
   align-items: center;
 }
 
+.cards h3 {
+  width: 80px;
+}
+
+.playNowBtn {
+  background-color: transparent;
+  border: none;  
+}
+ .cards .fa-solid {
+  font-size: 30px;
+  color: #3D3E7C;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+ }
+ 
+ .cards .fa-solid:hover {
+  color: white;
+  background-color: #3D3E7C;
+ }
 
 audio {
     width: 300px; /* Set the width of the audio player */
@@ -57,24 +71,7 @@ audio {
     box-shadow: none; /* No shadow */
 }
 
-audio::-webkit-media-controls-panel {
-    background-color: transparent; /* Transparent background of the control panel */
-    color: #fff; /* Text color */
-}
 
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-pause-button,
-audio::-webkit-media-controls-mute-button,
-audio::-webkit-media-controls-volume-slider,
-audio::-webkit-media-controls-timeline {
-    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background of the buttons */
-    border-radius: 50%; /* Rounded buttons */
-}
-
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display {
-    color: #fff; /* Text color */
-}
 
 
 .fa-solid {
