@@ -173,7 +173,7 @@ img {
   animation: spin 2s linear infinite;
 }
 
-/* @-webkit-keyframes spin {
+@-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
@@ -193,7 +193,7 @@ img {
   100% {
     background-position: 0% 50%;
   }
-} */
+} 
 
 
 #search-input{
