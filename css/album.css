@@ -35,14 +35,15 @@ body {
   animation: gradient-animation 42s ease infinite;
   border-radius: 10px;
   -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
--moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+
 }
 
 .cards {
   background-color: transparent;
   display: flex;
-  padding: 10px 15px;
+  padding: 10px 15px;     
   gap: 50px;
   align-items: center;
 }
@@ -82,7 +83,6 @@ audio::-webkit-media-controls-time-remaining-display {
     border:none;
     padding: 5px 10px;; 
     background: transparent;
-  ;
 }
 
 .btns {
@@ -98,8 +98,19 @@ audio::-webkit-media-controls-time-remaining-display {
   font-size: larger;
   color: white;
   text-shadow: 3cm 3cm 3cm 3cm black;
+
 }
 
+#Nav-icons {
+  font-size: 50px;
+  transition: 0.1s;
+}
+
+
+#Nav-icons:hover {
+  font-size: 80px;
+
+}
 
 nav a {
     font-size: 40px;
