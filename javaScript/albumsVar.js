@@ -5,31 +5,31 @@ export var albums = [
     image: "../imgs/jackboysCover.jpg",
     tracks: [
       {
-        title: "Gatti",
+        title: "Gatti1",
         artist: "Pop Smoke",
         image: "../imgs/jackboysCover.jpg",
         path: "../music/JACKBOYS, Pop Smoke, Travis Scott - GATTI (Audio).mp3",
       },
       {
-        title: "Gatti",
+        title: "Si ala",
+        artist: "Pop Smoke",
+        image: "../imgs/jackboysCover.jpg",
+        path: "../music/سي علاء  سكرلي البرنامج (1).mp3",
+      },
+      {
+        title: "Gatti3",
         artist: "Pop Smoke",
         image: "../imgs/jackboysCover.jpg",
         path: "../music/JACKBOYS, Pop Smoke, Travis Scott - GATTI (Audio).mp3",
       },
       {
-        title: "Gatti",
+        title: "Gatti4",
         artist: "Pop Smoke",
         image: "../imgs/jackboysCover.jpg",
         path: "../music/JACKBOYS, Pop Smoke, Travis Scott - GATTI (Audio).mp3",
       },
       {
-        title: "Gatti",
-        artist: "Pop Smoke",
-        image: "../imgs/jackboysCover.jpg",
-        path: "../music/JACKBOYS, Pop Smoke, Travis Scott - GATTI (Audio).mp3",
-      },
-      {
-        title: "Gatti",
+        title: "Gatti5",
         artist: "Pop Smoke",
         image: "../imgs/jackboysCover.jpg",
         path: "../music/JACKBOYS, Pop Smoke, Travis Scott - GATTI (Audio).mp3",

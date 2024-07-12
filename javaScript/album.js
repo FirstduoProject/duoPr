@@ -34,12 +34,28 @@ function filter(array,predicate) {
     return array2
 }
 
+nextBtn.addEventListener("click", function (event) {
+  if (currentIndex < allTracks.length - 1) {
+      currentIndex = currentIndex + 1;
+  } else {
+      currentIndex = 0;
+  }
+  playSong(currentIndex);
+});
 
 var div = document.getElementById("container");
 var currentAlbum = albums.filter(function (el) {
   return el.name === addAlbumName;
 });
 
+prevBtn.addEventListener("click", function (event) {
+  if (currentIndex > 0) {
+      currentIndex = currentIndex - 1;
+  } else {
+      currentIndex = allTracks.length - 1;
+  }
+  playSong(currentIndex);
+});
 
 
 var album = currentAlbum[0].tracks;

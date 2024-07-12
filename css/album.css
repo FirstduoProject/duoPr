@@ -23,6 +23,7 @@ img {
 body {
   width: 100vw;
   height: 100vh;
+  background-color: gray;
 }
 
 #container {
@@ -172,7 +173,7 @@ img {
   animation: spin 2s linear infinite;
 }
 
-@-webkit-keyframes spin {
+/* @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
@@ -192,5 +193,9 @@ img {
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
+
+#search-input{
+    display: none;
+}
