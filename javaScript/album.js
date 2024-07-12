@@ -5,7 +5,7 @@ var addAlbumName = urlParams.get("album");
 
 var div = document.getElementById("container");
 
-for (let i = 0; i < albums.length; i++) {
+for (var i = 0; i < albums.length; i++) {
   if (albums[i].name === addAlbumName) {
     var album = albums[i];
     for (let j = 0; j < album.tracks.length; j++) {
@@ -23,20 +23,16 @@ for (let i = 0; i < albums.length; i++) {
   }
 } 
 
-document.querySelector("#next").onclick = function NextSongs(){
- 
-  for (let i = 0; i < albums[0].tracks.length; i++) {
-    console.log(i)
-    var currentSong = track[0]
-    var previousSong = null;
-    var nextSong   = track[1]
-    if(currentSong === track[i]) {
-      previousSong = currentSong;
-      currentSong  = nextSong;
-    }
-  }
-  return nextSong
-}
+
+
+// div.innerHTML += `<nav>
+// <a href="musicPlayer.html" ><i class="fa-brands fa-spotify"></i></a>
+// <a href="#second"><i class="fas fa-search"></i></a>
+// <a href="#third"><i class="fa-regular fa-heart"></i></a>
+// // <a href="#fourth"><i class="far fa-address-card"></i></a> //
+// </nav> `;
+
+
 
 
 function each(array, func) {
@@ -44,6 +40,16 @@ function each(array, func) {
     func(array[i]);
   }
 }
+
+function map(people, f) {
+  var arr = [];
+  each(people, function (el, i) {
+    console.log(i);
+    arr.push(f(el, i));
+  });
+  return arr;
+}
+
 
 function filter(array,predicate) {
   var array2 = []
@@ -58,33 +64,38 @@ function filter(array,predicate) {
 }
    
 
-function searchFor() {
-  var newWord = document.getElementById("search").value.trim().toLowerCase(); 
+// function searchFor() {
+//   var newWord = document.getElementById("search").value.trim().toLowerCase(); 
 
-  var filteredTracks = 
-    filter(track, function(el) {
-    return newWord === el.title.toLowerCase() || newWord === el.artist.toLowerCase()
-  });
+//   var filteredTracks = filter(track, function(el) {
+//     return newWord === el.title.toLowerCase() || newWord === el.artist.toLowerCase()
+//   });
 
-  var container = document.getElementById("container");
-  container.innerHTML = "";
+//   div.style.display = "none";
 
-  each(filteredTracks,function(track) {
-    container.innerHTML += `
-      <div class="cards">
-        <h3 class="names">${track.title}</h3>
-        <h3 class="names">${track.artist}</h3>
-        <audio controls src="${track.path}" class="musicPlayer"></audio>
-        <div class="btns">
-          <button class="next"><i class="fa-solid fa-backward-step"></i></button>
-          <button class="prev"><i class="fa-solid fa-forward-step"></i></button>
-        </div>
-        <img src="${track.image}">
-      </div>`;
-  });
- }
+//   each(filteredTracks,function(track) {
+//     div.innerHTML += `
+//       <div class="cards">
+//         <h3 class="names">${track.title}</h3>
+//         <h3 class="names">${track.artist}</h3>
+//         <audio controls src="${track.path}" class="musicPlayer"></audio>
+//         <div class="btns">
+//           <button class="next"><i class="fa-solid fa-backward-step"></i></button>
+//           <button class="prev"><i class="fa-solid fa-forward-step"></i></button>
+//         </div>
+//         <img src="${track.image}">
+//       </div>`;
+//   });
+//  }
 
 
 
+  function addToFav(){
+    var fav = []
+    fav.push(album.tracks)
+    return fav
+  }
 
- document.getElementById("btn-search").onclick = function(){searchFor()};
+
+document.getElementById("heart").onclick = function(){addToFav()};
+document.getElementById("btn-search").onclick = function(){searchFor()};
