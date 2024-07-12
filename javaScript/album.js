@@ -40,8 +40,8 @@ div.innerHTML += `
         <h3 class="names" id="trackTitle" >${track.title}</h3>
         <h3 class="names" id="trackArtist" >${track.artist}</h3>
         <audio controls src="${track.path}" class="musicPlayer" id="player"></audio>
-        <div class="btns"><button id="prev"><i class="fa-solid fa-backward-step"></i></button>
-        <button id="next"><i class="fa-solid fa-forward-step"></i></button></div>
+        <div class="btns"><button id="prev"></i></button>
+        <button id="next"></i></button></div>
         <img src="${track.image}">
         </div>`;
 
@@ -60,7 +60,7 @@ function playSong(index) {
   audioPlayer.play();
 }
 
-nextBtn.addEventListener("click", function (event) {
+nextBtn.addEventListener("click", function () {
   if (currentIndex < allTracks.length - 1) {
     currentIndex = currentIndex + 1;
   } else {
@@ -69,7 +69,7 @@ nextBtn.addEventListener("click", function (event) {
   playSong(currentIndex);
 });
 
-prevBtn.addEventListener("click", function (event) {
+prevBtn.addEventListener("click", function () {
   if (currentIndex > 0) {
     currentIndex = currentIndex - 1;
   } else {
