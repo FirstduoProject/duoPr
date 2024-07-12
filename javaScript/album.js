@@ -19,7 +19,7 @@ var tracksHtml = allTracks
           <h3 class="names">${song.title}</h3>
           <h3 class="names">${song.artist}</h3>
           <div class="btns">
-              <button class="playNowBtn" data-index="${index}"><i class="fa-solid fa-forward-step"></i></button>
+              <button class="playNowBtn" data-index="${index}"><i class="fa-solid fa-play"></i></i></button>
           </div>
       </div>
   `;
